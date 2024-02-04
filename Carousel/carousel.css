@@ -15,8 +15,6 @@
     height:var(--HEIGHT);
     white-space: nowrap;
     overflow: hidden;
-    border: 1px solid blue;
-
 }
 
 #button-container{
@@ -35,7 +33,7 @@
     width: 15%;
     border: none;
     background: none;
-   transition: 0.4s
+    transition: 0.4s
 }
 
 .nav-btn:hover{

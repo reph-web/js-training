@@ -1,6 +1,6 @@
 function carousel(targetName, pictures){
-    //var initialization
 
+    //var initialization
     const HEIGHT = 500; //in px
     const WIDTH = 500; //in px
     const TIMING = 2000; //in ms
@@ -9,7 +9,7 @@ function carousel(targetName, pictures){
     var i = 1;
     var pos = WIDTH;
 
-    //add the last item on index 0 and first item on last index for seamless
+    //add the last item on index 0 and first item on last index for seamlessloop
     pictures.push(pictures[0]);
     pictures.splice(0, 0, pictures[pictures.length-2]);
 
@@ -82,7 +82,6 @@ function carousel(targetName, pictures){
     }
 
     //go to previous pic
-
     function back(){
         let imgs = document.getElementsByClassName('frame');
         i--;
@@ -121,8 +120,8 @@ function carousel(targetName, pictures){
             }
         }
     }
-    //add auto-mode
 
+    //add auto-mode
     var automode = setInterval(next, TIMING);
 
     //add event listener for button
@@ -139,12 +138,15 @@ function carousel(targetName, pictures){
     })
 
 }
+
+//your set of picture
 let pictures = [
-    '/home/sel/Formation/web-dev-projects/Cake Factory/img/fraisier.jpeg',
-    '/home/sel/Formation/web-dev-projects/Cake Factory/img/raspberrylayercake.jpg',
-    '/home/sel/Formation/web-dev-projects/Cake Factory/img/blackforestcake.jpg',
-    '/home/sel/Formation/web-dev-projects/Cake Factory/img/lemonpie.jpeg',
-    '/home/sel/Formation/web-dev-projects/Cake Factory/img/redvelvetcake.jpg'
+    './img/fraisier.jpeg',
+    './img/raspberrylayercake.jpg',
+    './img/blackforestcake.jpg',
+    './img/lemonpie.jpeg',
+    './img/redvelvetcake.jpg'
 ]
 
+//the first parameter is the carousel container div id, the second is the picture url array
 carousel('carousel-container', pictures)
