@@ -149,4 +149,4 @@ let pictures = [
 ]
 
 //the first parameter is the carousel container div id, the second is the picture url array
-carousel('carousel-container', pictures)
+carousel('spinOne', pictures)

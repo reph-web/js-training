@@ -1,5 +1,5 @@
 # Web Dev Projects
-Projects completed during my Web Developer Training
+JS-focused projects completed during my web developer training
 
 ## Cake factory
 Simple webpage with category filter in js
